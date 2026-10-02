@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[] args){
+Scanner scannerbaba = new Scanner(System.in);
+System.out.println("first number = ");
+double ilksayi = scannerbaba.nextDouble();
+System.out.println("Select your transaction");
+char islem = scannerbaba.next().charAt(0);
+System.out.println("second number");
+double ikincisayi = scannerbaba.nextDouble();
+if (islem == '+'){
+System.out.println("result :" + (ilksayi + ikincisayi));
+}
+else if (islem == '-'){
+System.out.println("result :" + (ilksayi - ikincisayi));
+}
+else if (islem == '*'){
+System.out.println("result :" + ilksayi * ikincisayi);
+}
+else if ( islem == '/'){
+if (ikincisayi == 0) {
+System.out.println("undefined");
+} else {
+System.out.println("result :" + (ilksayi / ikincisayi));
+}}
+else {
+    System.out.println("invalid operation");
+}
+}}
