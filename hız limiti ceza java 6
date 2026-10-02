@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[] args){
+Scanner scannerbaba = new Scanner(System.in);
+System.out.println("Enter Your Speed");
+int hiz = scannerbaba.nextInt();
+if (hiz <= 0) {
+System.out.println("You entered an invalid speed.");
+}
+else if (hiz <= 90){
+System.out.println("you obeyed the speed limits");
+}
+else if (hiz <= 110){
+System.out.println("speed violation penalty is 1000tl");
+}
+else if (hiz <= 130){
+System.out.println("speed violation penalty is 2000tl");
+}
+else {
+System.out.println("speed violation penalty is 3000tl");
+}
+}}
