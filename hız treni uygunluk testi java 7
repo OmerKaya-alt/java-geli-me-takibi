@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[] args){
+Scanner scannerbaba = new Scanner(System.in);
+System.out.println("boyunuzu giriniz = ");
+int boy = scannerbaba.nextInt();
+System.out.println("yaşınızı giirinz");
+int yas = scannerbaba.nextInt();
+System.out.println("kalp rahatsızlığı var mı (E) (H)");
+char kalp = scannerbaba.next().charAt(0);
+if (kalp == 'E'){
+    System.out.println("hız trenine binemez ");
+}
+else if (boy < 140){
+    System.out.println("boyunuz yetersiz binemezsiniz");
+}
+else if (yas < 12){
+    System.out.println("yanınızda veliniz ile binebilirsiniz");
+}
+else if (yas > 12){
+    System.out.println("trene binebilirsiniz");
+}
+}}
