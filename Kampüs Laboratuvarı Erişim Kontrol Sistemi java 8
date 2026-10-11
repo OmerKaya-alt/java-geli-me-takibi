@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String [] args){
+Scanner scannerbaba = new Scanner(System.in);
+System.out.println("kimlik numaranizin ilk hanesini girin");
+int kimlikno = scannerbaba.nextInt();
+System.out.println("mesai saatleri içersinde misiniz E H ?");
+char mesaisaat = scannerbaba.next().charAt(0);
+System.out.println("kayitli bir ogrencbi misin E H -");
+char kayitliogrenci = scannerbaba.next().charAt(0);
+System.out.println("geçerli bir gecis kartiniz var mi E H");
+char geciskart = scannerbaba.next().charAt(0);
+System.out.println("fakulte uyesi misiniz");
+char fakulte = scannerbaba.next().charAt(0);
+if ((kayitliogrenci == 'E' && geciskart == 'E') || (fakulte == 'E'  ) && (mesaisaat == 'E' || kimlikno < 1000)){
+System.out.println("sisteme giriş saglandi ... ");
+}
+else {
+    System.out.println("sisteme giremezsiniz ...");
+}
+}}
+
+
