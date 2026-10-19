@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Main{
+public static void main(String[]args){
+Scanner scannerbaba = new Scanner(System.in);
+System.out.println("1 ile 9 arasında bi sayı giriniz");
+int sayi = scannerbaba.nextInt();
+int araliksayi = (int)(Math.random() * 10);
+if (sayi == araliksayi){
+    System.out.println("KAZANDINIZ , KAZANAN SAYİ = " + araliksayi);
+}
+else {
+    System.out.println("KAYBETTİNİZ , sizin sayiniz = " + sayi + "kazanan sayi = " + araliksayi);
+}
+}}
